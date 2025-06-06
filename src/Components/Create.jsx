@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './Create.css';
 
 const Create = ({ addTodo }) => {
   const [title, setTitle] = useState("");
@@ -11,16 +12,20 @@ const Create = ({ addTodo }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Enter todo"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <br /><br />
-      <button type="submit">Create Todo</button>
-    </form>
+    <div className="create-container">
+      <h1>
+        Set <span className="highlight">Reminders</span> <br /> for tasks
+      </h1>
+      <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          placeholder="title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+        <button type="submit">Create Todo</button>
+      </form>
+    </div>
   );
 };
 

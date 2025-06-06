@@ -1,0 +1,38 @@
+.read-container {
+  width: 50%;
+  padding: 40px;
+  color: white;
+}
+
+.read-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.read-container .highlight {
+  color: #f792f7;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo-item {
+  background-color: #1e293b;
+  padding: 10px 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.todo-item button {
+  background-color: #ff4b5c;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
